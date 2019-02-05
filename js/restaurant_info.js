@@ -138,9 +138,11 @@ createReviewHTML = (review) => {
   name.innerHTML = review.name;
   li.appendChild(nameDiv);
   nameDiv.appendChild(name);
+  nameDiv.className = 'review-header';
 
   const date = document.createElement('p');
   date.innerHTML = review.date;
+  date.className = 'review-date';
   nameDiv.appendChild(date);
 
   const rating = document.createElement('p');
