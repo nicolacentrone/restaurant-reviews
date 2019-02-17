@@ -3,6 +3,10 @@
 	height: 60vh;
 }
 
+.inside #maincontent {
+  flex-wrap: wrap-reverse;
+}
+
 #restaurant-container {
   width: 100%;
 }
