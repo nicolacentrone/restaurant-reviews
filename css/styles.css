@@ -72,7 +72,7 @@ nav h1 {
 	margin-block-end: 0;
 	padding: 2.6vw 0;
 	margin: auto;
-	font-size: 1.3vw;
+	font-size: 2vh;
 }
 
 #breadcrumb {
@@ -88,7 +88,8 @@ nav h1 {
 /* Display list items side by side */
 #breadcrumb li {
     display: inline;
-		padding: 1% 0;
+		margin-top: auto;
+		margin-bottom: auto;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
@@ -162,7 +163,7 @@ nav h1 {
 
 #restaurants-list li {
   background-color: #fff;
-  border: 2px solid #ccc;
+  border: 1.2px solid #ccc;
   font-family: Arial,sans-serif;
   margin: 5px;
   min-height: 380px;
@@ -198,6 +199,12 @@ nav h1 {
 
 .restaurant-address {
 	height: 42px;
+}
+
+#restaurant-hours {
+	width: 80%;
+	margin-left: inherit;
+	margin-right: inherit;
 }
 
 #restaurants-list li a {
@@ -270,14 +277,25 @@ nav h1 {
   font-weight: 200;
   letter-spacing: 0;
   margin: 3% 0;
+	margin-left: inherit;
+	margin-right: inherit;
+	width: 80%;
+	text-align: center;
   text-transform: uppercase;
   line-height: 1.1;
 }
+
 #restaurant-img {
-	width: 90%;
+	display: block;
+	width: 80%;
+	margin-left: inherit;
+	margin-right: inherit;
 }
 #restaurant-address {
   font-size: 12pt;
+	width: 80%;
+	margin-left: inherit;
+	margin-right: inherit;
 }
 
 #restaurant-cuisine {
@@ -289,18 +307,23 @@ nav h1 {
   padding: 2px 0;
   text-align: center;
   text-transform: uppercase;
-	width: 90%;
+	width: 80%;
+	margin-left: inherit;
+	margin-right: inherit;
 }
 #restaurant-container {
   border-top: 1px solid #fff;
   width: 50%;
 	height: 100%;
-	margin: 0 5%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #reviews-container {
-	width: 100%;
-	margin-top: 10%;
+	width: 80%;
+	margin-left: inherit;
+	margin-right: inherit;
+	margin-top: 5%;
 }
 
 #reviews-container h2 {
@@ -309,22 +332,29 @@ nav h1 {
   font-weight: 300;
   letter-spacing: -1px;
   padding-bottom: 1pt;
+	width: 100%;
+	margin-left: inherit;
+	margin-right: inherit;
+
 }
 
 #reviews-list {
   margin: 0;
   padding: 0;
+	width: 100%;
 }
 #reviews-list li {
   background-color: #fff;
-  border: 2px solid #f3f3f3;
   display: block;
   list-style-type: none;
   overflow: hidden;
   position: relative;
-  width: 85%;
+  width: 100%;
 	border-radius: 25px 0 0 0;
 	margin: 2% 0;
+	margin-left: inherit;
+	margin-right: inherit;
+
 }
 
 #reviews-list li div {
