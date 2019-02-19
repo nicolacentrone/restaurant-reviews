@@ -54,7 +54,7 @@ article, aside, canvas, details, figcaption, figure, footer, hgroup, menu, nav, 
   text-transform: uppercase;
 }
 
-/* ====================== Navigation ======================================== */
+/* ============================== Navigation =============================== */
 nav {
   width: 100%;
 	height: 70%;
@@ -115,7 +115,7 @@ nav h1 {
     text-decoration: underline;
 }
 
-/* ====================== Map ====================== */
+/* ================================== Map ================================== */
 
 .map {
   height: 400px;
@@ -247,24 +247,24 @@ nav h1 {
 	height: auto;
 }
 
-.inside #maincontent {
+.inside .maincontent {
 	height: inherit;
 	display: flex;
 }
 
-.inside #map-container {
+.inside .map-container {
   background: blue none repeat scroll 0 0;
   width: 50%;
 	height: 100vh;
 }
 
-.inside #map {
+.inside .map {
   background-color: #ccc;
   width: 100%;
 	height: 100%;
 }
 
-.inside #footer {
+.inside .footer {
   bottom: 0;
   width: 100%;
 }
@@ -274,7 +274,7 @@ nav h1 {
 	width: 50%;
 }
 
-#restaurant-name {
+.restaurant-name {
   color: #f18200;
   font-family: Arial,sans-serif;
   font-size: 20pt;
@@ -289,20 +289,21 @@ nav h1 {
   line-height: 1.1;
 }
 
-#restaurant-img {
+.restaurant-img {
 	display: block;
 	width: 80%;
 	margin-left: inherit;
 	margin-right: inherit;
 }
-#restaurant-address {
+
+.restaurant-address {
   font-size: 12pt;
 	width: 80%;
 	margin-left: inherit;
 	margin-right: inherit;
 }
 
-#restaurant-cuisine {
+.restaurant-cuisine {
   background-color: #333;
   color: #ddd;
   font-size: 12pt;
@@ -315,7 +316,8 @@ nav h1 {
 	margin-left: inherit;
 	margin-right: inherit;
 }
-#restaurant-container {
+
+.restaurant-container {
   border-top: 1px solid #fff;
   width: 50%;
 	height: 100%;
@@ -323,14 +325,14 @@ nav h1 {
 	margin-right: auto;
 }
 
-#reviews-container {
+.reviews-container {
 	width: 80%;
 	margin-left: inherit;
 	margin-right: inherit;
 	margin-top: 5%;
 }
 
-#reviews-container h2 {
+.reviews-container h2 {
   color: #f58500;
   font-size: 24pt;
   font-weight: 300;
@@ -342,12 +344,13 @@ nav h1 {
 
 }
 
-#reviews-list {
+.reviews-list {
   margin: 0;
   padding: 0;
 	width: 100%;
 }
-#reviews-list li {
+
+.reviews-list li {
   background-color: #fff;
   display: block;
   list-style-type: none;
@@ -361,22 +364,23 @@ nav h1 {
 
 }
 
-#reviews-list li div {
+.reviews-list li div {
 	background-color: #333;
 	width: 100%;
 	height: 40px;
 	margin-top: 0;
 }
-#reviews-list li p {
+
+.reviews-list li p {
 	padding: 0 3%;
 }
 
-#reviews-list .review-header {
+.reviews-list .review-header {
 	display: flex;
 	width: 100%;
 }
 
-#reviews-list .review-header .review-date {
+.reviews-list .review-header .review-date {
 	width: 30%;
 	padding: 0 3%;
 	color: white;

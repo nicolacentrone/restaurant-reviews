@@ -1,12 +1,12 @@
-.inside #map-container {
+.inside .map-container {
   width: 100%;
 	height: 60vh;
 }
 
-.inside #maincontent {
+.inside .maincontent {
   flex-wrap: wrap-reverse;
 }
 
-#restaurant-container {
+.restaurant-container {
   width: 100%;
 }
