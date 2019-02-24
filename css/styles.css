@@ -257,14 +257,9 @@ nav h1 {
 
 .inside .map {
   background: blue none repeat scroll 0 0;
+	background-color: #ccc;
   width: 50%;
 	height: 100vh;
-}
-
-.inside .map {
-  background-color: #ccc;
-  width: 100%;
-	height: 100%;
 }
 
 .inside .footer {
