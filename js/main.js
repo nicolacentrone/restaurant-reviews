@@ -4,6 +4,8 @@ let restaurants,
 var newMap
 var markers = []
 
+// debugger;
+
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */
@@ -155,12 +157,14 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
 /**
  * Create restaurant HTML.
  */
+
 createRestaurantHTML = (restaurant) => {
   const li = document.createElement('li');
-
+  // debugger;
   const image = document.createElement('img');
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  image.alt = DBHelper.altForRestaurant(restaurant);
   li.append(image);
 
   const name = document.createElement('h1');
