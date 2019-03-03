@@ -44,6 +44,21 @@ article, aside, canvas, details, figcaption, figure, footer, hgroup, menu, nav, 
 	display: block;
 }
 
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #aaa;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  font-size: 10pt;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
 .footer {
   background-color: #444;
   color: #aaa;
