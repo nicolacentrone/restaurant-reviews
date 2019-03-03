@@ -261,13 +261,10 @@ nav h1 {
 	height: 20%;
 }
 
-.inside .main-container {
-	height: auto;
-}
-
 .inside .maincontent {
-	height: inherit;
+	height: auto;
 	display: flex;
+
 }
 
 .inside .map {
