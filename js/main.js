@@ -171,6 +171,7 @@ createRestaurantHTML = (restaurant) => {
 
   a.innerHTML = restaurant.name;
   a.href = DBHelper.urlForRestaurant(restaurant);
+  a.tabIndex = '0';
   name.append(a);
   li.append(name);
 
