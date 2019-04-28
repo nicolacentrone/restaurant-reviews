@@ -1,6 +1,6 @@
-self.addEventListener('install', function(event) {
+self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open('restaurant-reviews-static-v1').then(function(cache) {
+    caches.open('restaurant-reviews-static-v1').then(cache => {
       return cache.addAll([
         /* CSS */
         '/css/styles.css',
@@ -40,9 +40,9 @@ self.addEventListener('install', function(event) {
   );
 });
 
-self.addEventListener('fetch', function(event) {
+self.addEventListener('fetch', event => {
   event.respondWith(
-    caches.match(event.request).then(function(response) {
+    caches.match(event.request).then(response => {
       if (response) return response;
       return fetch(event.request);
     })
