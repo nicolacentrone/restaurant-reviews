@@ -4,6 +4,7 @@
   "description": "--- #### _Three Stage Course Material Project - Restaurant Reviews_",
   "main": "index.js",
   "dependencies": {
+    "eslint": "^5.16.0",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {},
