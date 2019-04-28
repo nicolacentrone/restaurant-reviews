@@ -1,11 +1,12 @@
 /**
  * Catches the install event for the Service Worker and adds files to the cache
  */
-
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open('restaurant-reviews-static-v1').then(cache => {
       return cache.addAll([
+        '/',
+
         /* CSS */
         '/css/styles.css',
         '/css/medium.css',
@@ -48,11 +49,10 @@ self.addEventListener('install', event => {
  * Catches the fetch events and if the requested file is already in the cache,
  * it uses it, otherwise it fetches to the network.
  */
-self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches.match(event.request).then(response => {
-      if (response) return response;
-      return fetch(event.request);
-    })
-  );
-});
+ self.addEventListener('fetch', function(event) {
+   event.respondWith(
+     caches.match(event.request).then(function(response) {
+       return response || fetch(event.request);
+     })
+   );
+ });
