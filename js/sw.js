@@ -11,7 +11,7 @@ self.addEventListener('install', function(event) {
         /* JS */
         '/js/dbhelper.js',
         '/js/main.js',
-        '/js/sw_registration.js',
+        '/sw_registration.js',
 
         /* Data */
         '/data/restaurants.json',
@@ -31,7 +31,11 @@ self.addEventListener('install', function(event) {
         '/img/8.jpg',
         '/img/9.jpg',
         '/img/10.jpg',
-      ]);
+      ]).then(err => {
+          console.log('All files have been cached!')
+        }).catch(err => {
+          console.log('All files have NOT been cached!')
+        });
     })
   );
 });
